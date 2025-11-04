@@ -75,22 +75,18 @@ Antes de ejecutar el proyecto, asegurate de tener instalado:
   
 git clone https://github.com/istrop26-hub/turnera-medica.git
 
-Entrá en la carpeta del proyecto:
+Entrá en la carpeta del proyecto: cd turnera-medica
 
-cd turnera-medica
+Instalá las dependencias: npm install
 
-Instalá las dependencias:
+Ejecutá el servidor: node src/index.js
 
-npm install
-
-Ejecutá el servidor:
-
-node src/server.js
-
+---------------------------------------
 
 El servidor quedará disponible en:
 http://localhost:3000
 
+--------------------------------------
 
 📡 Endpoints disponibles (CRUD de Médicos)
 
