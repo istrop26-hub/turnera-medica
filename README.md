@@ -8,8 +8,7 @@ Actualmente, los datos se almacenan **en memoria** (sin base de datos).
 ## 🚀 Características principales
 
 - ✅ CRUD completo de médicos (crear, listar, modificar, eliminar)
-- 📅 Preparado para futura gestión de pacientes y turnos
-- 🧠 Estructura simple y clara (rutas, controladores, servidor)
+- 🧠 Estructura simple y clara (rutas, servidor)
 - ⚡ Basado en Express, sin dependencias externas de base de datos
 
 ---
@@ -19,15 +18,17 @@ Actualmente, los datos se almacenan **en memoria** (sin base de datos).
 turnera-medica/
 │
 ├── src/
+
 │ ├── routes/
+
 │ │ └── medicos.routes.js # Rutas CRUD de médicos
+
 │ ├── server.js # Archivo principal del servidor
 │
 ├── package.json
+
 └── README.md
 
-yaml
-Copiar código
 
 ---
 
