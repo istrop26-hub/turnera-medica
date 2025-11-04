@@ -10,6 +10,15 @@ Actualmente, los datos se almacenan **en memoria** (sin base de datos).
 - ✅ CRUD completo de médicos (crear, listar, modificar, eliminar)
 - 🧠 Estructura simple y clara (rutas, servidor)
 - ⚡ Basado en Express, sin dependencias externas de base de datos
+- Con estos 4 médicos podés probar:
+
+/medicos → listar todos
+
+/medicos?especialidad=Pediatría → filtrar por especialidad
+
+/consultorios/consultorio/101/medicos → ver qué médicos están en el consultorio 101
+
+/medicos-consultorios → ver todos los médicos con su consultorio asignado
 
 ---
 
