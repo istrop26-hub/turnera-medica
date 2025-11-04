@@ -30,22 +30,31 @@ turnera-medica/
 │
 ├── src/
 │
+
 │ ├── routes/
 │
+
 │ │ └── consultorios.routes.js # Consultorios cargados en memoria
 │
+
 │ │ └── joinear.routes.js # Rutas extras de relación entre tablas
 │
+
 │ │ └── medicos.routes.js # Rutas CRUD de médicos
 │
+
 ├ ── index.js # Archivo principal del servidor
 │
+
 ├── .gitignore
 │
+
 ├── package-lock.json
 │
+
 ├── package.json
 │
+
 └── README.md
 
 
@@ -86,17 +95,24 @@ http://localhost:3000
 📡 Endpoints disponibles (CRUD de Médicos)
 
 POST	/medicos	Crear un nuevo médico
+
 GET	/medicos	Listar todos los médicos
+
 GET	/medicos/:id	Obtener un médico por ID
+
 PUT	/medicos/:id	Actualizar un médico existente
+
 DELETE	/medicos/:id	Eliminar un médico
 
 🧾 Ejemplo de creación (POST /medicos)
+
 Body (JSON):
 
 {
   "nombre": "Dra. Pérez",
+  
   "especialidad": "Cardiología",
+  
   "matricula": "MP-1234"
 }
 
