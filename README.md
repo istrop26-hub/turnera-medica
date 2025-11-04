@@ -7,18 +7,20 @@ Actualmente, los datos se almacenan **en memoria** (sin base de datos).
 
 ## 🚀 Características principales
 
-- ✅ CRUD completo de médicos (crear, listar, modificar, eliminar)
-- 🧠 Estructura simple y clara (rutas, servidor)
-- ⚡ Basado en Express, sin dependencias externas de base de datos
-- Con estos 4 médicos podés probar:
+- ✅ CRUD completo de médicos (crear, listar, modificar, eliminar).
+- 🧠 Estructura simple y clara.
+- ⚡ Basado en Express, sin dependencias externas de base de datos.
+- Viene con 4 médicos cargados en memoria y 3 consultorios. Con estos podés probar:
 
 /medicos → listar todos
 
 /medicos?especialidad=Pediatría → filtrar por especialidad
 
-/consultorios/consultorio/101/medicos → ver qué médicos están en el consultorio 101
+/joinear/medicos-por-consultorio?numero=101 → ver qué médicos están en el consultorio 101
 
 /medicos-consultorios → ver todos los médicos con su consultorio asignado
+
+/joinear/consultorios-por-medico?id=1 → Ver el consultorio que tiene el médico con matrícula 1
 
 ---
 
@@ -27,15 +29,23 @@ Actualmente, los datos se almacenan **en memoria** (sin base de datos).
 turnera-medica/
 │
 ├── src/
-
+│
 │ ├── routes/
-
+│
+│ │ └── consultorios.routes.js # Consultorios cargados en memoria
+│
+│ │ └── joinear.routes.js # Rutas extras de relación entre tablas
+│
 │ │ └── medicos.routes.js # Rutas CRUD de médicos
-
-│ ├── server.js # Archivo principal del servidor
+│
+├ ── index.js # Archivo principal del servidor
+│
+├── .gitignore
+│
+├── package-lock.json
 │
 ├── package.json
-
+│
 └── README.md
 
 
@@ -53,30 +63,28 @@ Antes de ejecutar el proyecto, asegurate de tener instalado:
 ## 🧠 Instalación y ejecución
 
 1. Cloná el repositorio:
-   ```bash
-   git clone https://github.com/istrop26-hub/turnera-medica.git
+  
+git clone https://github.com/istrop26-hub/turnera-medica.git
+
 Entrá en la carpeta del proyecto:
 
-bash
-Copiar código
 cd turnera-medica
+
 Instalá las dependencias:
 
-bash
-Copiar código
 npm install
+
 Ejecutá el servidor:
 
-bash
-Copiar código
 node src/server.js
-El servidor quedará disponible en:
 
-arduino
-Copiar código
+
+El servidor quedará disponible en:
 http://localhost:3000
+
+
 📡 Endpoints disponibles (CRUD de Médicos)
-Método	Endpoint	Descripción
+
 POST	/medicos	Crear un nuevo médico
 GET	/medicos	Listar todos los médicos
 GET	/medicos/:id	Obtener un médico por ID
@@ -86,25 +94,20 @@ DELETE	/medicos/:id	Eliminar un médico
 🧾 Ejemplo de creación (POST /medicos)
 Body (JSON):
 
-json
-Copiar código
 {
   "nombre": "Dra. Pérez",
   "especialidad": "Cardiología",
   "matricula": "MP-1234"
 }
+
+
 🛠️ Tecnologías utilizadas
-Node.js
-
-Express
-
-JavaScript
+- Node.js
+- Express
+- JavaScript
 
 ✨ Próximas mejoras
- Implementar CRUD de pacientes
-
- Asignación de turnos por médico
-
+ 
  Persistencia con base de datos (MongoDB o MySQL)
 
  Interfaz web (HTML + JS o React)
