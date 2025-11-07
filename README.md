@@ -18,9 +18,16 @@ Actualmente, los datos se almacenan **en memoria** (sin base de datos).
 
 /joinear/medicos-por-consultorio?numero=101 → ver qué médicos están en el consultorio 101
 
+<img width="1365" height="719" alt="Medicos asignados a un consultorio específico" src="https://github.com/user-attachments/assets/3ed16739-8bbd-45ed-9264-839d83d850d1" />
+
 /joinear/medicos-consultorios → ver todos los médicos con su consultorio asignado
 
+<img width="1359" height="721" alt="Todos los médicos con sus turnos asignados" src="https://github.com/user-attachments/assets/8e6c75a1-0d21-4fd5-988b-8484c4fd57ca" />
+
 /joinear/consultorios-por-medico?id=1 → Ver el consultorio que tiene el médico con matrícula 1
+
+<img width="1365" height="719" alt="Consultoris donde atiende un médico" src="https://github.com/user-attachments/assets/fac3af07-2424-4fc6-a216-0041f412622f" />
+
 
 ---
 
