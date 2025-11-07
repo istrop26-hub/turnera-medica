@@ -72,7 +72,7 @@ router.get('/', (req, res) => {
     resultado = resultado.filter(m =>
       normalizar(m.especialidad) === normalizar(especialidad)
     );
-    console.log("Paso2");
+  
   }
     
   if (nombre) {
