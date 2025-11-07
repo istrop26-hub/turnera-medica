@@ -18,7 +18,7 @@ Actualmente, los datos se almacenan **en memoria** (sin base de datos).
 
 /joinear/medicos-por-consultorio?numero=101 → ver qué médicos están en el consultorio 101
 
-/medicos-consultorios → ver todos los médicos con su consultorio asignado
+/joinear/medicos-consultorios → ver todos los médicos con su consultorio asignado
 
 /joinear/consultorios-por-medico?id=1 → Ver el consultorio que tiene el médico con matrícula 1
 
